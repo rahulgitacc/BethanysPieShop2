@@ -1,0 +1,7 @@
+﻿@model PieListVIewModel
+
+<h1>@Model.Category</h1>
+@foreach (var pie in Model.Pies)
+{
+    await Html.RenderPartialAsync("PieOverviewSummary", pie);
+}  
